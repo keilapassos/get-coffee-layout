@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+}
+
+header{
+    box-shadow: 0px 1px 8px rgba(36, 36, 36, 0.15);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.logo img{
+    width: 35px;
+    padding: 5px;
+}
+
+.logo span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.menu{
+    margin: 5px auto;
+    max-width: 80%;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;    
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+    max-width: 90%;
+    text-align: center;
+    min-height: 50vh;
+    max-width: 1140px;
+}
+
+.hero__text{
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.hero button{
+    background-color: #FCA60F;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 50px;
+    margin: 20px;
+}
+
+.hero .cup-img{
+    display: none;
+}
+
+.social-media{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.social-media li{
+    margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    main{
+        max-width: 1144px;
+        margin: 10px auto;
+        box-shadow: 0px 1px 8px rgba(36, 36, 36, 0.15);
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        margin: 0 auto;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin: 0 50px;
+    }
+
+    .menu{
+        width: 50%;
+        margin: 0 50px;
+    }
+    
+    .menu ul{
+        padding: 0;
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+        justify-content: space-evenly;
+    }
+
+    .hero{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        margin: 60px auto;
+        padding: 10px;
+        text-align: start;
+        width: 90%;
+    }
+    
+    .hero__text{
+        max-width: 80%;
+    }
+    
+    .hero .cup-img{
+        display: block;
+        padding: 0px;
+    }
+}
